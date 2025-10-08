@@ -1,0 +1,65 @@
+/* Barra fixa superior */
+.barra-fixed {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+.contenedor {
+    margin-top: 70px;
+    padding: 12px;
+    max-width: 900px;
+    margin-inline: auto; 
+}
+
+.seccio {
+    padding-block: 8px 16px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.sticky-separator {
+    position: sticky;
+    top: var(--sticky-offset);
+    height: 25px;               /* demanat: alt de 25px */
+    line-height: 25px;          /* centra el text verticalment */
+    padding: 0 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    z-index: 5;                 /* per sobre de les caixes */
+}
+
+.caixa {
+    height: 200px;
+    margin: 16px 0;
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+
+.botones {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 8px 16px;
+    border: 2px solid rgb(118, 35, 243);
+    border-radius: 6px;
+    border-color: rgb(118, 35, 243);
+    background-color: white;
+
+}
+
+.botones:hover {
+    background-color: rgb(118, 35, 243);
+    color: white;
+}
+
+.footer {
+    padding: 15px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1000;
+
+}
