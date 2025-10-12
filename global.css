@@ -8,10 +8,10 @@
 }
 
 .contenedor {
+    margin: auto;
     margin-top: 70px;
-    padding: 12px;
-    max-width: 900px;
-    margin-inline: auto; 
+    max-width: 1100px;
+     
 }
 
 .seccio {
@@ -35,7 +35,42 @@
     margin: 16px 0;
     background-color: #e0e0e0;
     border: 1px solid #999;
+        
+}
+
+.h1 {
+    text-align: center;
+}
+
+
+    /* Estil general de contenidors de prova */
+.demo {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    padding: 10px;
+    margin: 14px 0 28px;
+}
+
+    /* CAIXES (items) de mostra */
+.item {
+    width: var(--box);
+    height: var(--box);
     border-radius: 6px;
+    color: #222;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00000022;
+    background: #e3f2fd; /* blau suau */
+}
+
+    /* 1) Contenidor flex — fila per defecte */
+.flex-row {
+    display: flex;          /* Activa Flexbox */
+    gap: 10px;              /* espai entre items */
+    /* flex-direction: row; per defecte */
 }
 
 .botones {
@@ -62,4 +97,59 @@
     text-align: center;
     z-index: 1000;
 
+}
+
+/*productes
+
+/* --- Barra de filtres --- */
+/* Elements en línia per seleccionar categories */
+.filtres {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+  font-weight: 500;
+}
+
+
+/* --- Grid de productes --- */
+/* Contenidor flexible amb wrap i espai entre targetes */
+.grid-productes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* --- Targeta de producte --- */
+.targeta {
+  flex: 1 1 260px; /* amplada flexible (mínim 260px) */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+
+
+/* Imatge fictícia (pots substituir per una real més endavant) */
+.imatge {
+  background-color: #ccc;
+  width: 100%;
+  height: 150px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* Nom i preu */
+
+
+.preu {
+  color: #7722ff;
+  font-weight: bold;
+  margin: 0;
 }
