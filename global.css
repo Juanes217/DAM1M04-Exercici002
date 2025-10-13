@@ -4,7 +4,6 @@
     top: 0; left: 0;
     width: 100%;
     text-align: center;
-
 }
 
 
@@ -70,25 +69,11 @@
     /* 1) Contenidor flex — fila per defecte */
 .flex-row {
     display: flex;          /* Activa Flexbox */
+    justify-content: center; /* ✅ centra los elementos horizontalmente */
     gap: 10px;              /* espai entre items */
     /* flex-direction: row; per defecte */
 }
 
-.botones {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 8px 16px;
-    border: 2px solid rgb(118, 35, 243);
-    border-radius: 6px;
-    border-color: rgb(118, 35, 243);
-    background-color: white;
-
-}
-
-.botones:hover {
-    background-color: rgb(118, 35, 243);
-    color: white;
-}
 
 .footer {
     padding: 15px;
@@ -102,24 +87,12 @@
 
 /*productes
 
-/* --- Barra de filtres --- */
-/* Elements en línia per seleccionar categories */
-.filtres {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 2rem 0;
-  font-weight: 500;
-}
-
-
 /* --- Grid de productes --- */
 /* Contenidor flexible amb wrap i espai entre targetes */
 .grid-productes {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2px;
   justify-content: center;
 }
 
@@ -154,3 +127,55 @@
   font-weight: bold;
   margin: 0;
 }
+
+/*Contacte
+
+/* --- CONTACTE --- */
+
+/* Títol principal */
+.titol-contacte {
+  text-align: center;
+  margin-top: 100px; /* espai per sota de la barra fixa */
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Layout amb Grid de 2 columnes */
+.contacte-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dues columnes iguals */
+  gap: 2rem; /* espai entre columnes */
+  margin-top: 2rem;
+}
+
+/* Formulari */
+.formulari {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulari label {
+  font-weight: 500;
+  color: #333;
+}
+
+.formulari input,
+.formulari textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+
+/* Mapa fictici (caixa grisa) */
+.mapa {
+  width: 100%;
+  height: 200px;
+  background-color: #ddd; /* color gris simulant un mapa */
+  border: 1px solid #bbb;
+}
+
+
+
